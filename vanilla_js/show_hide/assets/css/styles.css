@@ -1,0 +1,4 @@
+.accessibly_hidden {
+	position: absolute;
+	left: -999em;
+}

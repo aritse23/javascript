@@ -1,0 +1,21 @@
+body {
+	background: #455259;
+	font-family: arial, helvetica;
+	font-size: 18px;
+	color: #9AB7C7;
+	margin: 0 auto;
+	width: 80%
+}
+span {
+	font-size: 14px;
+	color: #778D99;
+}
+p{
+	position:relative;
+}
+
+label {
+	margin-right: 1em;
+}
+
+

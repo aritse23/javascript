@@ -1,0 +1,42 @@
+body {
+	background: #06284B;
+	color: #fff;
+	text-align: center;
+}
+
+.nav button{
+	background: #FF530D;
+	color: #fff;
+	text-align: center;
+}
+
+.nav{
+	list-style: none;
+}
+
+.demo{
+	width:100px;
+	height: 100px;
+	background: red;
+}
+
+.demo2{
+	width:100px;
+	height: 100px;
+	background: red;
+	display: none;
+}
+.demo3{
+	width:400px;
+	height: 300px;
+	padding: 10px;
+	margin: 3px;
+	border: 1px solid yellow;
+	background-color: red;
+}
+
+.important{
+	font-weight: bold;
+	font-size: 50px;
+	background: red;
+}

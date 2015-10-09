@@ -15,7 +15,7 @@ function isPasswordValid() {
 }
 
 function arePasswordsMatching() {
-	$password.val() === $confirmPassword.val();
+	return $password.val() === $confirmPassword.val();
 }
 
 function canSubmit() {
@@ -33,7 +33,39 @@ function passwordEvent() {
 		$password.next().show();
 	}
 }
-// isUsernamePresent()
+
+function confirmPasswordEvent() {
+    if (arePasswordsMatching()) {
+        $confirmPassword.next()
+            .hide();
+    } else {
+        $confirmPassword.next()
+            .show();
+    }
+}
+
+//if the html elements value is not correct stop the submit
+function enableSubmitEvent() {
+	$("#submit").prop("disabled", !canSubmit());
+}
+
+// if username is present hide the span, else show
+function usernameEvent() {
+	if(isUsernamePresent()){
+		$username.next().hide();
+	} else {
+		$username.next().show();
+	}
+}
+// when event happens on password input
+$password.focus(passwordEvent).keyup(passwordEvent).keyup(confirmPasswordEvent).keyup(enableSubmitEvent);
+
+$confirmPassword.focus(confirmPasswordEvent).keyup(confirmPasswordEvent).keyup(enableSubmitEvent);
+
+$username.focus(usernameEvent).keyup(usernameEvent).keyup(enableSubmitEvent);
+
+enableSubmitEvent();
+// // isUsernamePresent()
 
 // return
 

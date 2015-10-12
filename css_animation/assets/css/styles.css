@@ -47,3 +47,132 @@
 	-webkit-animation: enlarge 2s infinite;
 	animation: enlarge 2s infinite;
 }
+
+/*RAINBOW*/
+@-webkit-keyframes rainbow {
+	0% {
+		background: lime;
+	}
+	25% {
+		background: yellow;
+	}
+	75% {
+		background: orange;
+	}
+	100% {
+		background: red;
+	}
+}
+
+@eyframes rainbow {
+	0% {
+		background: lime;
+	}
+	25% {
+		background: yellow;
+	}
+	75% {
+		background: orange;
+	}
+	100% {
+		background: red;
+	}
+}
+
+.background-effect {
+	border-radius: 50%;
+	-webkit-animation: rainbow 5s infinite;
+	animation: rainbow 5s infinite;
+}
+
+@-webkit-keyframes position {
+	0% {
+		left:0;
+	}
+	25% {
+		left:200px;
+	}
+	75% {
+		left:400px;
+	}
+	100% {
+		left:800px;
+	}
+}
+
+keyframes position {
+	0% {
+		left:0;
+	}
+	25% {
+		left:200px;
+	}
+	75% {
+		left:400px;
+	}
+	100% {
+		left:800px;
+	}
+}
+
+.move {
+	position: fixed;
+	bottom: 0;
+	-webkit-animation: position .5s infinite alternate;
+	animation: position .5s infinite alternate;
+}
+
+@-webkit-keyframes bounce {
+	0% {
+		left:0;
+		top:0;
+	}
+	25% {
+		left:200px;
+		top: 400px;
+	}
+	50% {
+		left:400px;
+		top: 0;
+	}
+	75% {
+		left:800px;
+		top:400px;
+	}
+
+	100% {
+		left: 1000px;
+		top: 0;
+	}
+}
+
+keyframes bounce {
+	0% {
+		left:0;
+		top:0;
+	}
+	25% {
+		left:200px;
+		top: 300px;
+	}
+	50% {
+		left:400px;
+		top: 0;
+	}
+	75% {
+		left:800px;
+		top:300px;
+	}
+
+	100% {
+		left: 1000px;
+		top: 0;
+	}
+}
+
+.move2 {
+	position: fixed;
+	bottom: 0;
+	-webkit-animation: bounce 1s infinite alternate;
+	animation: bounce 1s infinite alternate;
+}

@@ -1,4 +1,4 @@
-var $overlay = $('<div id="overlay"></div>');
+ var $overlay = $('<div id="overlay"></div>');
 var $image = $("<img>");
 var $caption = $("<p></p>");
 

@@ -127,11 +127,38 @@ keyframes bounce {
 	}
 }
 
+@-webkit-keyframes flying {
+	0% {
+		left: 0;
+		top: 20%;
+	}
+	100% {
+		left: 1000px;
+		top: 20%;
+	}
+}
+
+keyframes flying {
+	0% {
+		left: 0;
+
+	}
+	100% {
+		left: 1000px;
+	}
+}
+
+.fly {
+	position: fixed;
+	width: 500px;
+	-webkit-animation: flying 3s infinite alternate;
+	animation: flying 3s infinite alternate;
+}
+
 .move2 {
 	position: fixed;
 	bottom: 0;
-	-webkit-animation: bounce 1s infinite alternate;
-	animation: bounce 1s infinite alternate;
-	-webkit-filter: hue-rotate(90deg);
- 	filter: hue-rotate(90deg);
+	-webkit-animation: bounce 3s infinite alternate;
+	animation: bounce 3s infinite alternate;
+	
 }

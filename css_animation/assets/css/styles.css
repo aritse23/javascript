@@ -173,6 +173,5 @@ keyframes bounce {
 .move2 {
 	position: fixed;
 	bottom: 0;
-	-webkit-animation: bounce 1s infinite alternate;
-	animation: bounce 1s infinite alternate;
+	
 }
